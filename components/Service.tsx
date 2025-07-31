@@ -7,7 +7,7 @@ interface Service {
 
 const services: Service[] = [
   {
-    title: "1. Подготовительные работы",
+    title: "Подготовительные работы",
     items: [
       "Расчистка территории (удаление растительности, деревьев, мусора)",
       "Снос зданий и сооружений, мешающих строительству",
@@ -16,7 +16,7 @@ const services: Service[] = [
     ],
   },
   {
-    title: "2. Земляные работы",
+    title: "Земляные работы",
     items: [
       "Разработка грунта (снятие растительного слоя, выемка, насыпь)",
       "Планировка и профилирование основания дорожного полотна",
@@ -25,7 +25,7 @@ const services: Service[] = [
     ],
   },
   {
-    title: "3. Устройство дорожной одежды",
+    title: "Устройство дорожной одежды",
     items: [
       "Устройство подстилающих слоев (песчаный, щебеночный)",
       "Укладка несущих слоев (из щебня, гравия, ПГС и др.)",
@@ -34,7 +34,7 @@ const services: Service[] = [
     ],
   },
   {
-    title: "4. Устройство водоотводных систем",
+    title: "Устройство водоотводных систем",
     items: [
       "Прокладка ливневой канализации",
       "Монтаж водопропускных труб и лотков",
@@ -42,7 +42,7 @@ const services: Service[] = [
     ],
   },
   {
-    title: "5. Работы по обустройству дороги",
+    title: "Работы по обустройству дороги",
     items: [
       "Установка бордюров и тротуаров",
       "Разметка проезжей части",
@@ -52,7 +52,7 @@ const services: Service[] = [
     ],
   },
   {
-    title: "6. Реконструкция и капитальный ремонт",
+    title: "Реконструкция и капитальный ремонт",
     items: [
       "Снятие старого покрытия",
       "Усиление основания и дорожной одежды",
@@ -61,7 +61,7 @@ const services: Service[] = [
     ],
   },
   {
-    title: "7. Текущий ремонт",
+    title: "Текущий ремонт",
     items: [
       "Ямочный ремонт",
       "Заделка трещин и выбоин",
@@ -73,15 +73,21 @@ const services: Service[] = [
 
 const Services: FC = () => {
   return (
-    <section id="services" className="container mx-auto px-4 py-10">
-      <h2 className="text-center text-xl font-bold mb-10 sm:text-4xl sm:mb-20">
+    <section id="services" className="container mx-auto px-4 py-12">
+      <h2 className="text-center text-h1 font-bold mb-12 md:text-4xl">
         Наши услуги
       </h2>
-      <div className="space-y-8">
+
+      <div className="grid gap-4 sm:grid-cols-2">
         {services.map((service, index) => (
-          <div key={index} className="border-b border-black/10 pb-6">
-            <h3 className="text-lg font-semibold mb-4">{service.title}</h3>
-            <ul className="space-y-2 text-sm text-black/80 pl-4 list-disc">
+          <div key={index} className="border border-black/10 rounded-xl p-4">
+            <div className="flex items-center gap-4 mb-8">
+              <div className="w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center font-bold text-sm shrink-0">
+                {index + 1}
+              </div>
+              <h3 className="font-semibold leading-snug">{service.title}</h3>
+            </div>
+            <ul className="list-disc pl-6 space-y-2 text-sm text-black/80">
               {service.items.map((item, i) => (
                 <li key={i}>{item}</li>
               ))}

@@ -26,7 +26,7 @@ const Fleet: FC = () => {
           Наша спецтехника
         </h2>
         <p className="text-xs sm:text-base mt-4 text-center">
-          Для аренды спецтехники, нажмите кнопку "Связаться"
+          Предоставляем в аренду
         </p>
       </div>
       <div className="grid grid-cols-2 lg:grid-cols-3 gap-4">

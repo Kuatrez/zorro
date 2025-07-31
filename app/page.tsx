@@ -8,6 +8,7 @@ import Footer from "@/components/Footer";
 import Faq from "@/components/Faq";
 import Services from "@/components/Service";
 import Fleet from "@/components/Fleet";
+import Materials from "@/components/Materials";
 
 export default function Home() {
   const [contactModal, setContactModal] = useState<boolean>(false);
@@ -21,6 +22,7 @@ export default function Home() {
       <Header setContactModal={setContactModal} />
       <Hero setContactModal={setContactModal} />
       <Services />
+      <Materials setContactModal={setContactModal} />
       <Fleet />
       <Faq />
       <Footer />

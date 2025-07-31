@@ -1,11 +1,7 @@
 import Link from "next/link";
 import { FC } from "react";
 
-interface FooterProps {
-  setContactModal: (value: boolean) => void;
-}
-
-const Footer: FC<FooterProps> = ({ setContactModal }) => {
+const Footer: FC = () => {
   return (
     <footer className="bg-black/10">
       <div className="container mx-auto p-4">

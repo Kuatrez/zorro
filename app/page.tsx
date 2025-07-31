@@ -19,7 +19,7 @@ export default function Home() {
       <Header setContactModal={setContactModal} />
       <Hero setContactModal={setContactModal} />
       <Faq />
-      <Footer setContactModal={setContactModal} />
+      <Footer />
     </>
   );
 }

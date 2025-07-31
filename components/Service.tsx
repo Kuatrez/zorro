@@ -74,7 +74,7 @@ const services: Service[] = [
 const Services: FC = () => {
   return (
     <section id="services" className="container mx-auto px-4 py-12">
-      <h2 className="text-center text-h1 font-bold mb-12 md:text-4xl">
+      <h2 className="text-center text-xl font-bold mb-10 sm:text-4xl sm:mb-20">
         Наши услуги
       </h2>
 

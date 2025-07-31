@@ -49,7 +49,7 @@ const Faq: FC = () => {
       </h2>
       <div className="space-y-6">
         {data.map((item, index) => (
-          <div key={index} className="rounded-xl bg-black/10">
+          <div key={index} className="rounded-xl bg-black/5">
             <button
               className="w-full text-left p-4 font-semibold rounded-xl cursor-pointer flex justify-between items-center"
               onClick={() => toggle(index)}

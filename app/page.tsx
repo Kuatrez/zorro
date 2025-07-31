@@ -6,6 +6,7 @@ import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Footer from "@/components/Footer";
 import Faq from "@/components/Faq";
+import Services from "@/components/Service";
 
 export default function Home() {
   const [contactModal, setContactModal] = useState<boolean>(false);
@@ -18,6 +19,7 @@ export default function Home() {
     <>
       <Header setContactModal={setContactModal} />
       <Hero setContactModal={setContactModal} />
+      <Services />
       <Faq />
       <Footer />
     </>

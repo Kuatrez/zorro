@@ -27,13 +27,13 @@ const Materials: FC<MaterialsProps> = ({ setContactModal }) => {
           </p>
         </div>
 
-        <ul className="grid sm:grid-cols-2 md:grid-cols-4 gap-6 mb-8">
+        <ul className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-8 mb-8">
           {materials.map((item, index) => (
             <li
               key={index}
               className="bg-white rounded-xl overflow-hidden border border-black/10 flex flex-col"
             >
-              <div className="relative w-full h-60">
+              <div className="relative w-full h-24 sm:h-60">
                 <Image
                   src={item.image}
                   alt={item.name}
@@ -45,7 +45,7 @@ const Materials: FC<MaterialsProps> = ({ setContactModal }) => {
                 <p className="text-center font-medium mb-4">{item.name}</p>
                 <button
                   onClick={() => setContactModal(true)}
-                  className="mt-auto bg-primary text-white w-full h-10 rounded-xl hover:bg-primary/80 transition-colors"
+                  className="mt-auto cursor-pointer bg-primary text-white w-full h-10 sm:h-12 rounded-xl hover:bg-primary/80 transition-colors"
                 >
                   Подробнее
                 </button>

@@ -78,7 +78,7 @@ const Services: FC = () => {
         Наши услуги
       </h2>
 
-      <div className="grid gap-4 sm:grid-cols-2">
+      <div className="grid gap-4 sm:grid-cols-3">
         {services.map((service, index) => (
           <div key={index} className="border border-black/10 rounded-xl p-4">
             <div className="flex items-center gap-4 mb-8">

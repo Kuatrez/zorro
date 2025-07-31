@@ -4,6 +4,8 @@ import { useState } from "react";
 import ContactModal from "@/components/ContactModal";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
+import Footer from "@/components/Footer";
+import Faq from "@/components/Faq";
 
 export default function Home() {
   const [contactModal, setContactModal] = useState<boolean>(false);
@@ -16,6 +18,8 @@ export default function Home() {
     <>
       <Header setContactModal={setContactModal} />
       <Hero setContactModal={setContactModal} />
+      <Faq />
+      <Footer setContactModal={setContactModal} />
     </>
   );
 }

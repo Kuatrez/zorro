@@ -20,7 +20,7 @@ const Hero: FC<HeroProps> = ({ setContactModal }) => {
       </p>
       <button
         onClick={() => setContactModal(true)}
-        className="bg-primary h-12 sm:h-12 px-4 rounded-xl text-white w-full sm:w-lg cursor-pointer hover:bg-primary/80 mt-4 sm:mt-6"
+        className="bg-primary h-12 sm:h-12 px-4 sm:text-xl rounded-xl text-white w-full sm:w-lg cursor-pointer hover:bg-primary/80 mt-4 sm:mt-6"
       >
         Расчитать стоимость
       </button>

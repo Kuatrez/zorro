@@ -33,19 +33,22 @@ const Fleet: FC<FleetProps> = ({ setContactModal }) => {
           Предоставляем в аренду
         </p>
       </div>
-      <div className="grid grid-cols-2 lg:grid-cols-3 gap-4">
+      <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 sm:gap-4">
         {machines.map((machine, index) => (
-          <div key={index} className="rounded-xl overflow-hidden">
+          <div
+            key={index}
+            className="rounded-xl overflow-hidden bg-primary/10 p-2 sm:p-4"
+          >
             <div className="relative w-full h-48 sm:h-52 md:h-60">
               <Image
                 src={machine.image}
                 alt={"Zorro - Укладка асфальта любой сложности в Пушкино"}
                 layout="fill"
                 objectFit="cover"
-                className="rounded-xl"
+                className="rounded-lg"
               />
             </div>
-            <div className="py-4 text-sm sm:text-base font-medium">
+            <div className="text-sm sm:text-base font-medium h-16 flex justify-start items-center">
               {machine.name}
             </div>
           </div>

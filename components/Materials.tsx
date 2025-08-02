@@ -32,21 +32,21 @@ const Materials: FC<MaterialsProps> = ({ setContactModal }) => {
             </p>
           </div>
 
-          <ul className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-8 mb-8">
+          <ul className="grid grid-cols-2 sm:grid-cols-4 gap-2 sm:gap-8 mb-8">
             {materials.map((item, index) => (
               <li
                 key={index}
-                className="backdrop-blur-md rounded-xl overflow-hidden border bg-black/10 border-white/30 flex flex-col"
+                className="backdrop-blur-md p-2 sm:p-4 rounded-xl overflow-hidden border bg-black/10 border-white/30 flex flex-col"
               >
                 <div className="relative w-full h-32 sm:h-60">
                   <Image
                     src={item.image}
                     alt={item.name}
                     fill
-                    className="object-cover"
+                    className="object-cover rounded-lg"
                   />
                 </div>
-                <div className="p-2 flex flex-col flex-grow">
+                <div className="flex flex-col flex-grow">
                   <div className="flex justify-center items-center mb-4 h-16">
                     <p className="text-center text-white font-medium">
                       {item.name}

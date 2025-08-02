@@ -9,6 +9,7 @@ import Faq from "@/components/Faq";
 import Services from "@/components/Service";
 import Fleet from "@/components/Fleet";
 import Materials from "@/components/Materials";
+import Contacts from "@/components/Contacts";
 
 export default function Home() {
   const [contactModal, setContactModal] = useState<boolean>(false);
@@ -24,6 +25,7 @@ export default function Home() {
       <Services />
       <Materials setContactModal={setContactModal} />
       <Fleet setContactModal={setContactModal} />
+      <Contacts />
       <Faq />
       <Footer />
     </>

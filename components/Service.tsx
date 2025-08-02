@@ -80,7 +80,10 @@ const Services: FC = () => {
 
       <div className="grid gap-4 sm:grid-cols-3">
         {services.map((service, index) => (
-          <div key={index} className="border border-black/10 rounded-xl p-4">
+          <div
+            key={index}
+            className="border border-black/10 rounded-xl p-4 bg-white"
+          >
             <div className="flex items-center gap-4 mb-8">
               <div className="w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center font-bold text-sm shrink-0">
                 {index + 1}

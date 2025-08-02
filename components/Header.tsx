@@ -1,30 +1,15 @@
 "use client";
 
 import Image from "next/image";
-import { FC, useEffect, useState } from "react";
+import { FC } from "react";
 
 interface HeaderProps {
   setContactModal: (value: boolean) => void;
 }
 
 const Header: FC<HeaderProps> = ({ setContactModal }) => {
-  const [scrolled, setScrolled] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 10);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
   return (
-    <header
-      className={`fixed w-full z-20 transition-colors duration-300 ${
-        scrolled ? "bg-white shadow" : "bg-transparent"
-      }`}
-    >
+    <header className="fixed w-full z-20 bg-white shadow">
       <div className="p-4 container mx-auto flex justify-between items-center">
         <div className="flex justify-start items-center gap-2">
           <Image

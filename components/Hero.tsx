@@ -15,6 +15,7 @@ const Hero: FC<HeroProps> = ({ setContactModal }) => {
         alt={"Zorro - Укладка асфальта любой сложности в Пушкино"}
         layout="fill"
         objectFit="cover"
+        quality={100}
         className="fixed -z-10 w-screen h-screen"
       />
       <section className="p-4 container mx-auto pt-40 flex flex-col justify-center items-center bg-cover bg-center">

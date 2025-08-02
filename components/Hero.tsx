@@ -27,9 +27,8 @@ const Hero: FC<HeroProps> = ({ setContactModal }) => {
         <h1 className="text-2xl sm:text-6xl font-bold text-center max-w-4xl my-4 sm:my-6">
           Укладка асфальта любой сложности в Пушкино
         </h1>
-        <p className="text-center text-xs sm:text-xl">
-          Современное оборудование и квалифицированные специалисты для ваших
-          задач
+        <p className="text-center text-base sm:text-xl">
+          Современное оборудование и квалифицированные специалисты
         </p>
         <button
           onClick={() => setContactModal(true)}
@@ -44,7 +43,7 @@ const Hero: FC<HeroProps> = ({ setContactModal }) => {
         >
           <FaStar className="text-yellow-500" />
           <p className="flex items-center gap-2">
-            5,0 <span className="text-desc">412 оценок</span>
+            5,0 <span className="text-desc">87 оценок</span>
           </p>
           <svg
             width="28"

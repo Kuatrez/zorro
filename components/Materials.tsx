@@ -47,9 +47,11 @@ const Materials: FC<MaterialsProps> = ({ setContactModal }) => {
                   />
                 </div>
                 <div className="p-2 flex flex-col flex-grow">
-                  <p className="text-center text-white font-medium mb-4">
-                    {item.name}
-                  </p>
+                  <div className="flex justify-center items-center mb-4 h-16">
+                    <p className="text-center text-white font-medium">
+                      {item.name}
+                    </p>
+                  </div>
                   <button
                     onClick={() => setContactModal(true)}
                     className="mt-auto cursor-pointer bg-primary text-white w-full h-10 sm:h-12 rounded-lg hover:bg-primary/80 transition-colors"

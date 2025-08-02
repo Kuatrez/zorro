@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { FC, useEffect, useState } from "react";
 
 interface HeaderProps {
@@ -25,7 +26,16 @@ const Header: FC<HeaderProps> = ({ setContactModal }) => {
       }`}
     >
       <div className="p-4 container mx-auto flex justify-between items-center">
-        <p className="font-bold">ZORRO.SU</p>
+        <div className="flex justify-start items-center gap-2">
+          <Image
+            src={"/logo.webp"}
+            height={1080}
+            width={1080}
+            alt="Zorro - Укладка асфальта любой сложности в Пушкино"
+            className="w-10"
+          />
+          <p className="uppercase font-bold">Zorro</p>
+        </div>
         <button
           onClick={() => setContactModal(true)}
           className="bg-primary h-10 w-32 rounded-xl text-white cursor-pointer hover:bg-primary/80"

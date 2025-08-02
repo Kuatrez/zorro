@@ -23,15 +23,15 @@ const ContactModal: FC<ContactModalProps> = ({ setContactModal }) => {
             Заказать обратный звонок
           </h2>
           <div className="flex flex-col sm:flex-row gap-4">
-            <div className="flex items-center h-10 sm:h-12 rounded-xl pl-2 outline-none border border-black/10 w-full">
+            <div className="flex items-center h-10 sm:h-12 rounded-xl bg-primary/10 pl-2 outline-none border border-black/10 w-full">
               <Image
                 src="/russia.svg"
                 height={300}
                 width={900}
                 alt="SEO"
-                className="w-8 border border-black/10 rounded-md"
+                className="w-8 rounded-sm"
               />
-              <span className="text-text ml-1">+7</span>
+              <span className="text-text ml-3">+7</span>
               <input
                 type="tel"
                 name="phone"

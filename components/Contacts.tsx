@@ -33,9 +33,9 @@ const Contacts: FC = () => {
                   width={48}
                   height={24}
                   alt="Russia"
-                  className="w-12 h-6 rounded-md"
+                  className="w-8 rounded-sm"
                 />
-                <span className="text-text ml-1">+7</span>
+                <span className="text-text ml-3">+7</span>
                 <input
                   type="tel"
                   name="phone"

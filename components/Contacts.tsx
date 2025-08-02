@@ -27,7 +27,7 @@ const Contacts: FC = () => {
               Обратный звонок
             </h3>
             <div className="flex flex-col sm:flex-row gap-2">
-              <div className="flex items-center h-10 sm:h-12 rounded-xl pl-2 border border-black/10 w-full bg-primary/10">
+              <div className="flex items-center h-12 rounded-xl pl-2 border border-black/10 w-full bg-primary/10">
                 <Image
                   src="/russia.svg"
                   width={48}
@@ -47,7 +47,7 @@ const Contacts: FC = () => {
                   required
                 />
               </div>
-              <button className="bg-primary h-10 sm:h-12 w-full sm:w-96 rounded-xl text-white hover:bg-primary/80 transition">
+              <button className="bg-primary h-12 w-full sm:w-96 rounded-xl text-white hover:bg-primary/80 transition">
                 Отправить
               </button>
             </div>
@@ -65,7 +65,7 @@ const Contacts: FC = () => {
           <div className="flex flex-col gap-2">
             <Link
               href="tel:+79265003902"
-              className="flex justify-center items-center gap-2 text-black bg-black/5 rounded-xl w-full h-10 sm:h-12 hover:opacity-70"
+              className="flex justify-center items-center gap-2 text-black bg-black/5 rounded-xl w-full h-12 hover:opacity-70"
             >
               <IoCall className="text-xl" />
               +7 (926) 500-39-02
@@ -74,7 +74,7 @@ const Contacts: FC = () => {
               <Link
                 href="https://t.me/your_username"
                 target="_blank"
-                className="flex justify-center items-center gap-2 bg-sky-500 text-white rounded-xl h-10 sm:h-12 hover:bg-sky-600"
+                className="flex justify-center items-center gap-2 bg-sky-500 text-white rounded-xl h-12 hover:bg-sky-600"
               >
                 <RiTelegram2Fill className="text-2xl" />
                 Telegram
@@ -82,7 +82,7 @@ const Contacts: FC = () => {
               <Link
                 href="https://wa.me/79265003902"
                 target="_blank"
-                className="flex justify-center items-center gap-2 bg-green-500 text-white rounded-xl h-10 sm:h-12 hover:bg-green-600"
+                className="flex justify-center items-center gap-2 bg-green-500 text-white rounded-xl h-12 hover:bg-green-600"
               >
                 <RiWhatsappFill className="text-2xl" />
                 WhatsApp

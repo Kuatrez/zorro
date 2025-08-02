@@ -23,7 +23,7 @@ const ContactModal: FC<ContactModalProps> = ({ setContactModal }) => {
             Заказать обратный звонок
           </h2>
           <div className="flex flex-col sm:flex-row gap-4">
-            <div className="flex items-center h-10 sm:h-12 rounded-xl bg-primary/10 pl-2 outline-none border border-black/10 w-full">
+            <div className="flex items-center h-12 rounded-xl bg-primary/10 pl-2 outline-none border border-black/10 w-full">
               <Image
                 src="/russia.svg"
                 height={300}
@@ -43,7 +43,7 @@ const ContactModal: FC<ContactModalProps> = ({ setContactModal }) => {
                 required
               />
             </div>
-            <button className="bg-primary h-10 sm:h-12 w-full sm:w-72 rounded-xl text-white cursor-pointer hover:bg-primary/80">
+            <button className="bg-primary h-12 w-full sm:w-72 rounded-xl text-white cursor-pointer hover:bg-primary/80">
               Отправить
             </button>
           </div>
@@ -60,7 +60,7 @@ const ContactModal: FC<ContactModalProps> = ({ setContactModal }) => {
         <div className="w-full p-4 flex flex-col gap-4">
           <Link
             href="/"
-            className="flex justify-center items-center gap-2 text-black bg-black/10 rounded-xl w-full h-10 sm:h-12 hover:opacity-50"
+            className="flex justify-center items-center gap-2 text-black bg-black/10 rounded-xl w-full h-12 hover:opacity-50"
           >
             <IoCall className="text-xl" />
             +7 (926) 500-39-02
@@ -68,14 +68,14 @@ const ContactModal: FC<ContactModalProps> = ({ setContactModal }) => {
           <div className="grid grid-cols-2 gap-4">
             <Link
               href="/"
-              className="flex justify-center items-center gap-2 bg-sky-500 text-white rounded-xl w-full h-10 sm:h-12 hover:bg-sky-500/80"
+              className="flex justify-center items-center gap-2 bg-sky-500 text-white rounded-xl w-full h-12 hover:bg-sky-500/80"
             >
               <RiTelegram2Fill className="text-2xl" />
               Telegram
             </Link>
             <Link
               href="/"
-              className="flex justify-center items-center gap-2 bg-green-500 text-white rounded-xl w-full h-10 sm:h-12 hover:bg-green-500/80"
+              className="flex justify-center items-center gap-2 bg-green-500 text-white rounded-xl w-full h-12 hover:bg-green-500/80"
             >
               <RiWhatsappFill className="text-2xl" />
               WhatsApp

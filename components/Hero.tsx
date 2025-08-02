@@ -11,13 +11,15 @@ const Hero: FC<HeroProps> = ({ setContactModal }) => {
   return (
     <>
       <Image
-        src={"/bg.webp"}
-        alt={"Zorro - Укладка асфальта любой сложности в Пушкино"}
-        layout="fill"
-        objectFit="cover"
+        src="/bg.webp"
+        alt="Zorro - Укладка асфальта любой сложности в Пушкино"
+        fill
+        sizes="(max-width: 768px) 100vw, 100vw"
+        priority
         quality={100}
-        className="fixed -z-10 w-screen h-screen"
+        className="fixed -z-10 w-full h-full object-cover"
       />
+
       <section className="p-4 container mx-auto pt-40 flex flex-col justify-center items-center bg-cover bg-center">
         <p className="border rounded-full w-fit px-4 py-1 text-xs sm:text-xl">
           От частного двора до крупных дорожных объектов

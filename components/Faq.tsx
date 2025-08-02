@@ -39,16 +39,15 @@ const Faq: FC = () => {
   return (
     <div id="faq" className="container mx-auto p-4 py-12">
       <div className="mb-10 sm:mb-20 flex flex-col justify-center items-center">
-        <h2 className="text-center text-xl font-bold sm:text-4xl">Ответы</h2>
-        <p className="text-xs sm:text-base mt-4 text-center">
-          на частые вопросы
-        </p>
+        <h2 className="text-center text-xl font-bold sm:text-4xl">
+          Частые вопросы
+        </h2>
       </div>
       <div className="space-y-6">
         {data.map((item, index) => (
           <div key={index} className="rounded-xl bg-black/5">
             <button
-              className="w-full text-left p-4 font-semibold rounded-xl cursor-pointer flex justify-between items-center"
+              className="w-full text-left p-4 rounded-xl cursor-pointer flex justify-between items-center"
               onClick={() => toggle(index)}
             >
               {item.question}

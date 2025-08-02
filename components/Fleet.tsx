@@ -29,9 +29,7 @@ const Fleet: FC<FleetProps> = ({ setContactModal }) => {
         <h2 className="text-center text-xl font-bold sm:text-4xl">
           Наша спецтехника
         </h2>
-        <p className="text-xs sm:text-base mt-4 text-center">
-          Предоставляем в аренду
-        </p>
+        <p className="sm:text-base mt-4 text-center">Предоставляем в аренду</p>
       </div>
       <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 sm:gap-4">
         {machines.map((machine, index) => (

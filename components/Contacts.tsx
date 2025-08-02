@@ -16,7 +16,7 @@ const Contacts: FC = () => {
           <h2 className="text-center text-xl font-bold sm:text-4xl text-white drop-shadow">
             Связаться с нами
           </h2>
-          <p className="text-xs sm:text-base mt-4 text-center text-white drop-shadow">
+          <p className="sm:text-base mt-4 text-center text-white drop-shadow">
             Бесплатная консультация
           </p>
         </div>

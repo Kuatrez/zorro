@@ -6,6 +6,10 @@ interface Machine {
   image: string;
 }
 
+interface FleetProps {
+  setContactModal: (value: boolean) => void;
+}
+
 const machines: Machine[] = [
   { name: "Асфальтоукладчик Vogel 1900-2", image: "/fleet/vogel-1900-2.webp" },
   { name: "Каток Hamm HD 110", image: "/fleet/hamm-hd-110.webp" },
@@ -18,7 +22,7 @@ const machines: Machine[] = [
   { name: "Тралл 13 м на базе МАЗ", image: "/fleet/maz-trall.webp" },
 ];
 
-const Fleet: FC = () => {
+const Fleet: FC<FleetProps> = ({ setContactModal }) => {
   return (
     <section id="fleet" className="container mx-auto px-4 py-12">
       <div className="mb-10 sm:mb-20 flex flex-col justify-center items-center">
@@ -46,6 +50,14 @@ const Fleet: FC = () => {
             </div>
           </div>
         ))}
+      </div>
+      <div className="flex justify-center items-center">
+        <button
+          onClick={() => setContactModal(true)}
+          className="bg-primary h-12 sm:h-12 px-4 sm:text-xl rounded-xl text-white w-full sm:w-lg cursor-pointer hover:bg-primary/80 mt-4 sm:mt-6"
+        >
+          Подробнее
+        </button>
       </div>
     </section>
   );

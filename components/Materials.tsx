@@ -16,43 +16,51 @@ const materials = [
 
 const Materials: FC<MaterialsProps> = ({ setContactModal }) => {
   return (
-    <section id="materials" className="bg-primary/10">
-      <div className="container mx-auto px-4 py-12">
-        <div className="mb-10 sm:mb-20 flex flex-col justify-center items-center">
-          <h2 className="text-center text-xl font-bold sm:text-4xl">
-            Сыпучие материалы
-          </h2>
-          <p className="text-xs sm:text-base mt-4 text-center">
-            Доставка по Московской области
-          </p>
-        </div>
+    <section
+      id="materials"
+      className="bg-cover bg-center bg-no-repeat"
+      style={{ backgroundImage: "url('/bg-materials.webp')" }}
+    >
+      <div className="">
+        <div className="container mx-auto px-4 py-12">
+          <div className="mb-10 sm:mb-20 flex flex-col justify-center items-center">
+            <h2 className="text-center text-xl font-bold sm:text-4xl text-white drop-shadow">
+              Сыпучие материалы
+            </h2>
+            <p className="text-xs sm:text-base mt-4 text-center text-white drop-shadow">
+              Доставка по Московской области
+            </p>
+          </div>
 
-        <ul className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-8 mb-8">
-          {materials.map((item, index) => (
-            <li
-              key={index}
-              className="bg-white rounded-xl overflow-hidden border border-black/10 flex flex-col"
-            >
-              <div className="relative w-full h-24 sm:h-60">
-                <Image
-                  src={item.image}
-                  alt={item.name}
-                  layout="fill"
-                  objectFit="cover"
-                />
-              </div>
-              <div className="p-4 flex flex-col flex-grow">
-                <p className="text-center font-medium mb-4">{item.name}</p>
-                <button
-                  onClick={() => setContactModal(true)}
-                  className="mt-auto cursor-pointer bg-primary text-white w-full h-10 sm:h-12 rounded-xl hover:bg-primary/80 transition-colors"
-                >
-                  Подробнее
-                </button>
-              </div>
-            </li>
-          ))}
-        </ul>
+          <ul className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-8 mb-8">
+            {materials.map((item, index) => (
+              <li
+                key={index}
+                className="backdrop-blur-md rounded-xl overflow-hidden border bg-black/10 border-white/30 flex flex-col"
+              >
+                <div className="relative w-full h-32 sm:h-60">
+                  <Image
+                    src={item.image}
+                    alt={item.name}
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                <div className="p-2 flex flex-col flex-grow">
+                  <p className="text-center text-white font-medium mb-4">
+                    {item.name}
+                  </p>
+                  <button
+                    onClick={() => setContactModal(true)}
+                    className="mt-auto cursor-pointer bg-primary text-white w-full h-10 sm:h-12 rounded-lg hover:bg-primary/80 transition-colors"
+                  >
+                    Подробнее
+                  </button>
+                </div>
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
     </section>
   );

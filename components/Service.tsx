@@ -84,13 +84,13 @@ const Services: FC = () => {
             key={index}
             className="border border-black/10 rounded-xl p-4 bg-white"
           >
-            <div className="flex items-center gap-4 mb-8">
+            <div className="flex items-center gap-4 mb-4">
               <div className="w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center font-bold text-sm shrink-0">
                 {index + 1}
               </div>
-              <h3 className="font-semibold leading-snug">{service.title}</h3>
+              <h3 className="font-medium">{service.title}</h3>
             </div>
-            <ul className="list-disc pl-6 space-y-2 text-sm text-black/80">
+            <ul className="p-4 list-disc space-y-4 text-xs sm:text-sm text-black/80">
               {service.items.map((item, i) => (
                 <li key={i}>{item}</li>
               ))}

@@ -23,7 +23,7 @@ export default function Home() {
       <Hero setContactModal={setContactModal} />
       <Services />
       <Materials setContactModal={setContactModal} />
-      <Fleet />
+      <Fleet setContactModal={setContactModal} />
       <Faq />
       <Footer />
     </>
